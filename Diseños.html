@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diseños</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="images/kruna.png" alt="kruna">
+        <div class="btn_menu"><a><img src="images/hamb.png"></a></div>
+      </div>
+
+      <div class="menu">
+        <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li>
+            <div class="btn_diseños">
+              <a>Diseños</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="navigation_diseños">
+          <li><a href="diseños.html#telas">Telas</a></li>
+          <li><a href="diseños.html#talles">Talles</a></li>
+          <li><a href="diseños.html#datos">Pedido</a></li>
+        </ul>
+      </div>
+
+    </nav>
+  </header>
+
+
+  <h2 id="telas">Distintos tipos de telas</h2>
+  <div class="info_telas">
+    <div class="info_raso">
+      <div class="close"><img class="close" src="images/close.png"></div>
+      <img src="images/Raso-info.png">
+    </div>
+    <div class="info_encaje">
+      <div class="close"><img class="close" src="images/close.png"></div>
+      <img src="images/encaje-info.png">
+    </div>
+    <div class="info_saten">
+      <div class="close"><img class="close" src="images/close.png"></div>
+      <img src="images/saten-info.png">
+    </div>
+    <div class="info_tul">
+      <div class="close"><img class="close" src="images/close.png"></div>
+      <img src="images/Tul-info.png">
+    </div>
+  </div>
+  <div class="lista">
+    <ul>
+      <li><span>RASO</span><a class="boton" id="info_raso"><img src="images/raso-tela.jpg"></a></li>
+
+      <li><span>ENCAJE</span><a class="boton" id="info_encaje"><img src="images/encaje-tela.jpg"></a></li>
+
+      <li><span>SATEN</span><a class="boton" id="info_saten"><img src="images/saten-tela.jpg"></a></li>
+
+      <li><span>TUL</span><a class="boton" id="info_tul"><img src="images/tul-tela.jpg"></a></li>
+
+    </ul>
+  </div>
+
+
+  <h2 id="datos">Elige como quieres tu vestido:</h2>
+
+  <div class="table-container">
+
+    <table class="tabla">
+      <thead>
+        <tr>
+          <td>Talle</td>
+          <td>Tela</td>
+          <td>Color</td>
+        </tr>
+      </thead>
+      <tbody id="cuerpoTabla">
+
+      </tbody>
+    </table>
+
+  </div>
+
+  <p id="mensaje"></p>
+
+  <div class="informacion">
+    <form id="formEdit" class="oculto" action="">
+      <fieldset id="fieldsetEdit">
+        <p>Modificar</p>
+        <input id="inputEditId" type="hidden" name="id" required>
+        <input id="inputEditTalle" type="text" name="talle" required>
+        <input id="inputEditTela" type="text" name="tela" required>
+        <input id="inputEditColor" type="text" name="color" required>
+        <button>Modificar</button>
+      </fieldset>
+    </form>
+
+    <form id="form-data">
+      <input type="number" name="" value="" id="talle" placeholder=" Talle" required>
+      <input type="text" name="" value="" id="tela" placeholder=" Tela" required>
+      <input type="text" name="" value="" id="color" placeholder=" Color" required>
+      <div class="buttons">
+        <button type="button" id="btnAdd">Enviar</button>
+        <button type="button" id="x3">Enviar(3)</button>
+      </div>
+    </form>
+  </div>
+
+  <h1 id="talles">Talles estándar</h1>
+
+  <div class="table-container">
+    <table class="tabla">
+      <thead>
+        <tr>
+          <td>TALLES</td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+        </tr>
+      </thead>
+
+      <tr>
+        <td>MANGA</td>
+        <td>58</td>
+        <td>59</td>
+        <td>61</td>
+        <td>62</td>
+      </tr>
+
+
+      <tr>
+        <td>BUSTO</td>
+        <td>92</td>
+        <td>96</td>
+        <td>100</td>
+        <td>104</td>
+      </tr>
+
+      <tr>
+        <td>CINTURA</td>
+        <td>70</td>
+        <td>74</td>
+        <td>100</td>
+        <td>104</td>
+      </tr>
+
+      <tr>
+        <td>CADERA</td>
+        <td>96</td>
+        <td>100</td>
+        <td>104</td>
+        <td>106</td>
+      </tr>
+
+      <tr>
+        <td>PIERNA</td>
+        <td>99</td>
+        <td>100</td>
+        <td>101</td>
+        <td>102</td>
+      </tr>
+
+    </table>
+  </div>
+
+  <footer>
+    <section class="links">
+      <a href="index.html"> Inicio</a>
+      <a href="diseños.html"> Diseños</a>
+      <a href="contacto.html"> Contacto</a>
+    </section>
+    <div class="social">SEGUINOS
+      <img src="images/facebook-icon.png">
+      <img src="images/instagram-icon.png">
+    </div>
+
+  </footer>
+  <script src="javascript/main.js"></script>
+  <script src="javascript/table.js"></script>
+  <script src="javascript/info_telas.js"></script>
+
+</body>
+
+</html>

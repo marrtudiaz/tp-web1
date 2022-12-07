@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/kruna.png" alt="kruna">
+                <div class="btn_menu"><a><img src="images/hamb.png"></a></div>
+            </div>
+
+            <div class="menu">
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li>
+                        <div class="btn_diseños">
+                            <a>Diseños</a>
+                        </div>
+                    </li>
+
+                </ul>
+                <ul class="navigation_diseños">
+                    <li><a href="diseños.html#telas">Telas</a></li>
+                    <li><a href="diseños.html#talles">Talles</a></li>
+                    <li><a href="diseños.html#datos">Pedido</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <h1>Contactanos</h1>
+
+    <div class="contacto-container">
+        <p class="mas-info">¡Envianos tus datos! Por favor, completa el formulario. </p>
+        <div class="formulario">
+            <div class="contactate-formulario">
+                <form action="" method="get">
+                    <p>Nombre y Apellido:</p>
+                    <input type="text" name="Nombre y Apellido" value="">
+                    <p>Email:</p>
+                    <input type="email" name="Email" value="">
+                    <p>Teléfono:</p>
+                    <input type="number" name="Telefono" value="">
+                    <p>Dirección:</p>
+                    <input type="text" name="Dirección" value="">
+                    <p>Deja un mensaje:</p>
+                    <textarea name="text" id="" cols="30" rows="5"></textarea>
+
+                    <div class="captcha">
+                        <p>Antes de enviar tu mensaje, prueba que no eres un Robot:</p>
+                        <div id="captchaBackground">
+                            <span id="captcha">captcha text</span>
+                        </div>
+                        <input id="textBox" type="text" name="text">
+                        <div id="buttons">
+                            <button id="submitButton" type="submit" value="Enviar">Enviar</button>
+                            <button id="refreshButton" type="button">Refresh</button>
+                        </div>
+                        <span id="output"></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <p class="mas-info">A la brevedad nos contactaremos para concretar una entrevista o aclarar tus dudas sobre como
+            funciona Kruna.</p>
+    </div>
+
+
+    <footer>
+        <section class="links">
+            <a href="index.html"> Inicio</a>
+            <a href="diseños.html"> Diseños</a>
+            <a href="contacto.html"> Contacto</a>
+        </section>
+        <div class="social"> SEGUINOS
+            <img src="images/facebook-icon.png">
+            <img src="images/instagram-icon.png">
+        </div>
+    </footer>
+
+    <script src="javascript/main.js"></script>
+    <script src="javascript/captcha.js"></script>
+</body>
+
+</html>
